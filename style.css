@@ -11,6 +11,9 @@ body{
     width: 100%;
     height: 100%;
     font-family: 'Rubik', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .news_label{
     position: absolute;
@@ -42,7 +45,10 @@ body{
     border-radius: 7px;
 }
 .textred{
-    color: #C30501;
+    color:#f17c25;;
+}
+.textgreen{
+    color: #1A8917;
 }
 .bgblk{
     background-color: #000;
@@ -117,6 +123,10 @@ body{
 .drawer_open a.menus:hover{
     background-color: rgba(255, 255, 255, 0.134);
 }
+.drawer_open a.menus.active{
+    border-left: 3px solid #F4BE4A;
+    background-color: rgba(255, 255, 255, 0.134);
+}
 .drawer_open1{
     display: block;
     position: fixed;
@@ -141,52 +151,40 @@ body{
 .drawer_open1 a.menus:hover{
     background-color: rgba(255, 255, 255, 0.134);
 }
-
-.loc_drawer_open{
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1113;
-    width: 100%;
-    height: 100vh;
-}
-.loc_drawer_open .back_drop{
-    cursor: pointer;
-    width: 100%;
-    height: 100vh;
-    background-color: #00000077;
-}
-.loc_drawer_open .paper{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 11;
-    width: 100%;
-    height: 70vh;
-    background: #FAFAFA 0% 0% no-repeat padding-box;
-    border-bottom-left-radius: 13px;
-    border-bottom-right-radius: 13px;
-} 
-.loc_drawer_open .paper .loc_select{
-    cursor: pointer;
-    text-decoration: none;
-    padding: 10px 45px;
-    color: #000;
-    border: 2px solid #C30501;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
-}
-.loc_drawer_open .paper .loc_select:hover{
-    color: #fff;
-    background-color: #C30501;
-    border: 2px solid #C30501;
+.drawer_open1 a.menus.active{
+    border-left: 3px solid #F4BE4A;
+    background-color: rgba(255, 255, 255, 0.134);
 }
 .first_heading{
-    font-weight: 600;
-    letter-spacing: 3px;
-    text-align: center;
+    position: relative;
+    letter-spacing: 1px;
+    width: fit-content;
 }
+.first_heading::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #F17C25;
+    border-radius: 50%;
+}
+#footer{
+    margin-top: auto;
+}
+.socialbg{
+    text-decoration: none;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #ffba8a;
+    border-radius: 10px;
+}
+.social{
+    color: #e14927;
+    font-size: 25px;
+}
+
 .second_heading{
     font-family: 'Rozha One', serif;
     margin-top: 15px;
