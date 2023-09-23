@@ -28,9 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const drawer_open = () => {
     document.getElementById("drawer").classList.add('drawer_open');
+    document.getElementById("drawer1").classList.remove('drawer_open1');
   }
   const drawer_open1 = () => {
     document.getElementById("drawer1").classList.add('drawer_open1');
+    document.getElementById("drawer").classList.remove('drawer_open');
   }
   const drawer_close = () => {
     document.getElementById("drawer").classList.remove('drawer_open');
