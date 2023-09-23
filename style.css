@@ -170,6 +170,12 @@ body{
     background-color: #F17C25;
     border-radius: 50%;
 }
+.menu_img{
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px #00000077;
+}
 #footer{
     margin-top: auto;
 }
