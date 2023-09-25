@@ -62,49 +62,49 @@
       </a>
     </div>
     <div id="englishmenu" class=" ms-4 d-flex flex-column">
-      <a class="menus active">
+      <a href="/" class="menus">
         <span class="fs-6 fw-normal">Home</span>
       </a>
-      <a class="menus">
+      <a href="senthayal.html" class="menus">
         <span class="fs-6 fw-normal">About Us</span>
       </a>
-      <a class="menus">
+      <a href="nigazhvugal.html" class="menus">
         <span class="fs-6 fw-normal">Events</span>
       </a>
-      <a class="menus">
+      <a href="paruvaithazh.html" class="menus">
         <span class="fs-6 fw-normal">Magazine</span>
       </a>
-      <a class="menus">
+      <a href="uruppinar.html" class="menus">
         <span class="fs-6 fw-normal">Membership</span>
       </a>
-      <a class="menus ">
+      <a href="padaippali.html" class="menus ">
         <span class="fs-6 fw-normal">Creators Cart</span>
       </a>
-      <a class="menus">
+      <a href="samoogapanigal.html" class="menus">
         <span class="fs-6 fw-normal">Social Services</span>
       </a>
-      <a class="menus">
+      <a href="maruthuvarmarupakkam.html" class="menus">
         <span class="fs-6 fw-normal">Meditalks</span>
       </a>
-      <a class="menus">
+      <a href="maruthuvapudumai.html" class="menus">
         <span class="fs-6 fw-normal">Medical Innovations</span>
       </a>
-      <a class="menus">
+      <a href="maruthuvarsathanaigal.html" class="menus">
         <span class="fs-6 fw-normal">Medicos Record</span>
       </a>
-      <a class="menus">
+      <a href="noolvimarsanam.html" class="menus">
         <span class="fs-6 fw-normal">Book Review</span>
       </a>
-      <a class="menus">
+      <a href="nagaisuvaivirunthu.html" class="menus">
         <span class="fs-6 fw-normal">Humour Feast</span>
       </a>
-      <a class="menus">
+      <a href="povomaoorkolam.html" class="menus">
         <span class="fs-6 fw-normal">The Doctor's Tours</span>
       </a>
-      <a class="menus">
+      <a href="thamizhinai.html" class="menus">
         <span class="fs-6 fw-normal">Tamil Equivalent Words</span>
       </a>
-      <a class="menus">
+      <a href="thodarpukolka.html" class="menus">
         <span class="fs-6 fw-normal">Contact Us</span>
       </a>
     </div>
@@ -137,18 +137,21 @@
 
   <script>
 
-      $(document).ready(function(){
-        $("#englishmenu a").click(function(){
-          $('#englishmenu a').removeClass("active");
-          $(this).addClass("active");
-      });
-      });
+      // $(document).ready(function(){
+      //   $("#englishmenu a").click(function(){
+      //     $('#englishmenu a').removeClass("active");
+      //     $(this).addClass("active");
+      // });
+      // });
 
       for(let i=0 ; i< $("#tamilmenu a").length; i++){
         const path = window.location.pathname;
         if($("#tamilmenu a")[i].pathname === path){
             $("#tamilmenu a")[i].classList.add("active")        
         }  
+        if($("#englishmenu a")[i].pathname === path){
+            $("#englishmenu a")[i].classList.add("active")        
+        } 
       }
 
   </script>
